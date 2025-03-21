@@ -32,16 +32,6 @@ def sum_times(t1, t2):
 
     return sum
 
-def change_time(time, seconds):
-    time.second += seconds
-    if valid_time(time) != True:
-        while time.second >= 60:
-             time.second -= 60
-             time.minute +=1
-        while time.minute >= 60:
-             time.minute -= 60
-             time.hour += 1
-    return None
 
 def change_time(time, seconds):
     time.second += seconds
